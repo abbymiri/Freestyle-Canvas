@@ -93,6 +93,24 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.moveTo(cx, cy - scale / 4.2);
   context.lineTo(cx, cy + scale / 1);
   context.stroke();
+
+  //draw a new letter U on top of the symbol
+  context.strokeStyle = "#ffffff"; //this changes the color to white
+  context.lineWidth = 5; //this makes it a thinner line
+  context.beginPath(); //this tells the computer we're gonna draw
+  context.moveTo(120, 139.3);
+  context.lineTo(120, 285);
+  context.lineTo(240, 285);
+  context.lineTo(240, 139.3);
+  context.stroke();
+
+  //draw a new letter T on top of the T
+  context.beginPath();
+  context.moveTo(80,196.4);
+  context.lineTo(280,196.4);
+  context.moveTo(180,196.4);
+  context.lineTo(180,345);
+  context.stroke();
     </script>
 		
 	</p>
