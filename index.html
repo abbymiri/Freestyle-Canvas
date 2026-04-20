@@ -146,7 +146,7 @@ context.fill();
 context.stroke();
 */
 
-/*commenting out trianle code
+/*commenting out triangle code
 //drawing a right triangle
 context.strokeStyle = "green"
 context.lineWidth = 7
@@ -169,6 +169,24 @@ context.ellipse(150, 100, 80, 40, 22/12*Math.PI, 0, 2*Math.PI);
 context.fill();
 context.stroke();
 */
+
+//here on out is the code that is being used for my drawing of a car
+
+//body of the car
+context.fillStyle = "#3b82f6";
+context.fillRect(90,230,180,45);
+
+//top of the car
+context.beginPath();
+context.moveTo(125,230);
+context.lineTo(155,195);
+context.lineTo(220,195);
+context.lineTo(245,230);
+context.closePath();
+context.fill();
+context.strokeStyle = "black";
+context.lineWidth = 2;
+context.stroke();
 
 
     </script>
